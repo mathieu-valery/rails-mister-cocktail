@@ -1,0 +1,16 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.details {
+  display: flex;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cocktail-list {
+  display: flex;
+  flex-direction: column;
+}

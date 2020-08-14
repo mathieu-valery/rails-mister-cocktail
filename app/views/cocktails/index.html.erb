@@ -1,11 +1,19 @@
-<h1>🍹🧉🥤🍸 Cocktails list 🍹🧉🥤🍸</h1>
-<%= link_to "Add a new cocktail", new_cocktail_path %>
-<hr>
-<br>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1591243315780-978fd00ff9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80">
+    <div class="container">
+      <h1>Mister Cocktail</h1>
+      <p>Every day is a good day to take the apero!</p>
+      <%= link_to "+ Add a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+    </div>
+  </div>
 
-<div class="cocktail-list">
-  <% @cocktails.each do |cocktail| %>
+<div class=container>
+  <div class="cards mt-2">
 
-  <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  <% end %>
+      <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=986&q=80)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+       </div>
+      <% end %>
+
+
 </div>

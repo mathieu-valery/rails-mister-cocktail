@@ -2,13 +2,7 @@ require 'net/http'
 require 'json'
 
 
-Cocktail.create(name: 'Bloody Mary')
-Ingredient.create(name: 'Vodka')
-Ingredient.create(name: 'Lemon Juice')
-Ingredient.create(name: 'Tomato Juice')
-Dose.create(description: '3 parts', cocktail_id: 1, ingredient_id: 1)
-Dose.create(description: '1 part', cocktail_id: 1, ingredient_id: 2)
-Dose.create(description: '6 parts', cocktail_id: 1, ingredient_id: 3)
+
 
 require 'net/http'
 require 'json'

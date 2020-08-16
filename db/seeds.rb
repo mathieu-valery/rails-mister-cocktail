@@ -1,12 +1,6 @@
 require 'net/http'
 require 'json'
 
-
-
-
-require 'net/http'
-require 'json'
-
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 uri = URI(url)
 response = Net::HTTP.get(uri)
